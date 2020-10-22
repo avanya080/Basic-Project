@@ -1,45 +1,54 @@
 <html>
-<head>
-<style>
-form
-{
-background-color:pink;
-text-align:center
-}
-</style>
-<script>
-function add()
-{
-var n1=parseInt(document.getElementById("txt1").value,10);
-var n2=parseInt(document.getElementById("txt2").value,10);
-var n3=n1+n2;
-document.getElementById("res").value=n3;
-}
-function subtraction()
-{
-var n1=parseInt(document.getElementById("txt1").value,10);
-var n2=parseInt(document.getElementById("txt2").value,10);
-var n3=n1-n2;
-document.getElementById("res").value=n3;
-}
+    <head>
+        <style>
+            form
+            {
+            background-color:pink;
+            text-align:center
+            }
+        </style>
 
-</script>
-</head>
-<body>
-<center><h2>Simple Calculator<h2></center><br>
-<form>
-First Number<input type="text" id="txt1"><br>
-<br>
-<br>
-Second Number<input type="text" id="txt2"><br>
-<br>
-<br>
-Result<input type="text" id="res"><br>
-<br>
-<br>
-<input type="button" value="+" onclick="add()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="button" value="-" onclick="subtraction()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <script>
+            function add()
+                {
+                var n1=parseInt(document.getElementById("txt1").value,10);
+                var n2=parseInt(document.getElementById("txt2").value,10);
+                var n3=n1+n2;
+                document.getElementById("res").value=n3;
+                }
+            function subtraction()
+                {
+                var n1=parseInt(document.getElementById("txt1").value,10);
+                var n2=parseInt(document.getElementById("txt2").value,10);
+                var n3=n1-n2;
+                document.getElementById("res").value=n3;
+                }  
+            function multiplication(){
+                var n1=parseInt(document.getElementById("txt1").value,10);
+                var n2=parseInt(document.getElementById("txt2").value,10);
+                var n3=n1*n2;
+                document.getElementById("res").value=n3;
+            } 
+        </script>
+    </head>
 
-<input type="reset" value="C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</body>
+
+    <body>
+        <center><h2>Simple Calculator<h2></center><br>
+        <form>
+            First Number<input type="text" id="txt1"><br>
+        <br>
+        <br>
+        Second Number<input type="text" id="txt2"><br>
+        <br>
+        <br>
+        Result<input type="text" id="res"><br>
+        <br>
+        <br>
+        <input type="button" value="+" onclick="add()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="-" onclick="subtraction()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="*" onclick="multiplication()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="C">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </form>
+    </body>
 </html>
